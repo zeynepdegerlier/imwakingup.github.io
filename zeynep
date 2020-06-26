@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<title> Zeynep Değerlier </title>
+<link href="copy.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="favicon.ico" />
+<script>
+document.addEventListener("contextmenu",function (dilosurucu) {
+alert("BİLİMSEL VERİLERİN KORUNMASI İÇİN BU SİTEDE KOPYALAMA İŞLEMİ YAPILMASI YASAKTIR. ");
+dilosurucu.preventDefault();
+});
+</script>
+</head>
+
+
+
+ 
+
+
+<body style="background-color:#AAF0D1;">
+<div id="üst">
+<div id="header">
+  <div id="logo">
+   <h1>Zeynep<span class="logo_rengi"> Değerlier</span></h1>
+
+<div id="slogan">
+<h2>SCİENCE-LEARN-TRY</h2>
+     </div>
+     
+<div id="menü">
+     <ul>
+      <li><a href=" zeynep.html">ANA SAYFA</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="lgsavcisi.html">LGS</a></li>
+     </ul>
+
+
+
+     </div>
+<div id="content">
+<div id="içerik">
+<div id="başlık_1">
+<div id="merhaba">
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+<br />
+<br />
+<br />
+
+<br />
+<div id="içerik_2">
+
+
+</div>
+
+
+
+
+<br />
+
+
+
+<br />
+<br />
+
+
+
+
+
+<div id="hello">
+<h1>MERHABA BEN ZEYNEP</h1>
+</div>
+
+
+
+
+
+
+
+
+<h1><strong>BLOGUM</strong></h1>
+<br />
+
+<h2>Blogumdaki bilgilerle insanları bilgilendirmek istiyorum. Bu yüzden güncel bilimsel haberler ve bilim insanları ile ilgili "science with zeynep " blogunu oluşturdum. Blogumu okumak için "BLOG" kısmına göz atabilirsiniz.  </h2>
+
+<br />
+<br />
+
+<br>
+<h1><strong>LGS</strong></h1>
+<h2>
+<br />
+
+
+7. sınıfa geçen bir öğrenci olarak LGS sınavı ile ilgili haberler yazdığım "LGS" bölümüne göz atabilirsiniz.
+</h2>
+
+<br />
+<br />
+
+
+<br />
+<br />
+
+
+
+<h1><strong>HAKKIMDA</strong></h1>
+<h2>
+<br />
+
+Benim hakkımdakı bilgileri okumak için "HAKKIMDA" kısmına göz atabilirsiniz.
+</h2>
+<br />
+<br />
+
+
+<br />
+<br />
+
+</div>
+
+
+<div id="sidebar">
+
+
+     </div>
+
+</div>
+
+<div id="footer">
+
+COPYRİGHT  ©copy: Zeynep Değerlier |<a href="zeynep.html">ANA SAYFA|<a href="about.html.">About|<a href="blog.html">Blog|<a href="lgsavcisi.html">LGS
+ 
+
+
+</div>
+</body>
+
+</html>
