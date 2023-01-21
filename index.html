@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Diary</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#today">Today</a></li>
-          <li><a href="#previous">Previous Entries</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="today">
-        <h1>Today's Entry</h1>
-        <form>
-          <label for="entry">Write your entry here:</label>
-          <textarea id="entry" rows="10" cols="50"></textarea>
-          <input type="submit" value="Save Entry">
-        </form>
-      </section>
-      <section id="previous">
-        <h1>Previous Entries</h1>
-        <ul>
-          <li><a href="#entry1">Entry 1</a></li>
-          <li><a href="#entry2">Entry 2</a></li>
-          <li><a href="#entry3">Entry 3</a></li>
-        </ul>
-      </section>
-    </main>
-  </body>
+<head>
+  <title>Digital Diary</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+</head>
+<body>
+  <h1>Digital Diary</h1>
+  <div id="calendar"></div>
+  <textarea id="diary-entry"></textarea>
+  <button id="save-entry">Save</button>
+  <div id="previous-entries"></div>
+
+  <script>
+    $(document).ready(function() {
+      // Initialize calendar
+      $('#calendar').datepicker();
+
+      // Save diary entry
+      $('#save-entry').click(function() {
+        var entry = $('#diary-entry').val();
+        var date = $('#calendar').datepicker('getDate');
+
+        // Save entry to local storage
+        localStorage.setItem(date, entry);
+
+        // Show saved entry in previous entries div
+        $('#previous-entries').append('<p>' + date + ': ' + entry + '</p>');
+
+        // Clear diary entry textarea
+        $('#diary-entry').val('');
+      });
+
+      // Show previous entries when a date is selected on the calendar
+      $('#calendar').on('change', function() {
+        var date = $(this).datepicker('getDate');
+        var entry = localStorage.getItem(date);
+        $('#diary-entry').val(entry);
+      });
+    });
+  </script>
+</body>
 </html>
