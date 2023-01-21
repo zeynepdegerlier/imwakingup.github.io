@@ -16,7 +16,9 @@
   <script>
     $(document).ready(function() {
       // Initialize calendar
-      $('#calendar').datepicker();
+        $('#calendar').datepicker({
+    firstDay: 1
+  });
 
       // Save diary entry
       $('#save-entry').click(function() {
