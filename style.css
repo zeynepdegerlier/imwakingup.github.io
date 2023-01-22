@@ -1,0 +1,10 @@
+body {
+  background-color: #007EA7;
+}
+
+#calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
