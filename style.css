@@ -1,5 +1,7 @@
 body {
   background-color: #007EA7;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .container {
