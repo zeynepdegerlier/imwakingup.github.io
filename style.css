@@ -19,3 +19,13 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+
+.diary-entry {
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid black;
+  margin-top: 20px;
+  
+}
