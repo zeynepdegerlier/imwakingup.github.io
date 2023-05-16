@@ -1,61 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Im Waking Up</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+  <title>Zeynep Değerlier</title>
+  
 </head>
 <body>
   <div class="center">
     <div>
       
-        <h1>Im Waking Up</h1>
-        <div id="calendar"></div>
-        <textarea id="diary-entry"></textarea>
-        <button id="save-entry"> <input type="image" src=" heart.png " value="submit" width="50px"> </button>
-        <div id="previous-entries"></div>
-        <div class="container">
-        </div>
-      
-     
-    </div>
-  </div>
-
-
-
-
-
-  <script>
-    $(document).ready(function() {
-      // Initialize calendar
-        $('#calendar').datepicker({
-    firstDay: 1
-  });
-
-      // Save diary entry
-      $('#save-entry').click(function() {
-        var entry = $('#diary-entry').val();
-        var date = $('#calendar').datepicker('getDate');
-
-        // Save entry to local storage
-        localStorage.setItem(date, entry);
-
-        // Show saved entry in previous entries div
-        $('#previous-entries').append('<p>' + date + ': ' + entry + '</p>');
-
-        // Clear diary entry textarea
-        $('#diary-entry').val('');
-      });
-
-      // Show previous entries when a date is selected on the calendar
-      $('#calendar').on('change', function() {
-        var date = $(this).datepicker('getDate');
-        var entry = localStorage.getItem(date);
-        $('#diary-entry').val(entry);
-      });
-    });
-  </script>
+        <h1>BAŞLIK</h1>
+        
 </body>
 </html>
